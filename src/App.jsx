@@ -6,7 +6,7 @@ import Labs from "./pages/Labs";
 import Lab from "./pages/Lab";
 import { useStoredState } from "./lib/storage";
 import { guides } from "./content/guides";
-import { SourceLink, LinkButton } from "./components/UI";
+import { LinkButton } from "./components/UI";
 function getPath() {
   return window.location.hash.slice(1).split("?")[0] || "/";
 }
@@ -118,9 +118,6 @@ export default function App() {
           <p>AI를 배우고, 내 일에 쓰는 실용 자료실.</p>
         </div>
         <div>
-          <SourceLink href="https://nondev-thinking.web.app/library/">
-            참고한 원본 자료실
-          </SourceLink>
           <span className="small">새로 쓴 가이드와 브라우저 실습 · 2026</span>
         </div>
       </footer>
